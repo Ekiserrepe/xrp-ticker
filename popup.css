@@ -6,6 +6,12 @@ body {
   margin:0;
   padding:0;
 }
+.parrafo{
+  text-align: center;
+}
+.parrafo img{
+display: inline-block;
+}
 .footer {
 
   position: relative;
@@ -47,7 +53,7 @@ li.cabecera a:hover {
 }
 .default-text{
 
-  margin: 10px;
+  margin-top: 10px;
   padding: 10px;
   width: auto;
   height: auto;
@@ -100,11 +106,11 @@ h2 {
 .links-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .links-table td {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border: 1px solid black;
   /* Bordes blancos */
@@ -113,7 +119,7 @@ h2 {
 .links-table a {
   display: block;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -130,4 +136,18 @@ h2 {
   /* Cambio de color del texto */
   transition: border-color 0.3s, color 0.3s;
   /* Transición para el cambio de color del borde */
+}
+
+.brillo {
+  --a: 8deg; /* control the angle of rotation (the smaller, the better) */
+  aspect-ratio: 1;
+  transform: perspective(400px) rotate3d(var(--i,1,-1),0,var(--a));
+  mask: 
+    linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+    100% 100%/240% 240%;
+  transition: .4s;
+}
+.brillo:hover {
+  --i:-1,1;
+  mask-position: 0 0;
 }
