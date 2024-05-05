@@ -72,7 +72,7 @@ li.cabecera a {
   font-weight: bold;
 }
 li.cabecera a:hover {
-  background-color: #111;
+  background-color: #000000;
   color: #ffffff; 
 }
 .default-text{
