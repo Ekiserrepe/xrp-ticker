@@ -9,7 +9,7 @@ The price badge is updated every 5 minutes.
 ## **To-Do List**
 
 * A better design for links and popup.html
-* More options for the ticker price
+* More options for the ticker price.
 
 
 
